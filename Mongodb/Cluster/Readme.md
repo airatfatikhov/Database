@@ -8,8 +8,8 @@ sudo dnf install -y mongodb-org
 На всех трёх серверах отредактируйте /etc/mongod.conf:
 ````
 storage:
-  dbPath: /var/lib/mongodb
-  journal:
+  dbPath: /var/lib/mongodb # Зависит от версии
+  journal:              # Зависит от версии
     enabled: true
 
 systemLog:
